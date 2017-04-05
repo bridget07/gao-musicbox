@@ -1,0 +1,156 @@
+@keyframes vr {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#g-music-box {
+    width: 300px;
+    height: 520px;
+    background: #353030;
+    box-shadow: 5px 5px 15px 1px #333333;
+    position: relative;
+    margin: 0 auto;
+}
+.g-music-head {
+    width: inherit;
+    height: 12%;
+    text-align: center;
+    background: #000000;
+}
+#g-music-img {
+    width: inherit;
+    height: 48%;
+}
+#g-music-detail {
+    width: inherit;
+    height: 15%;
+    color: #e1e1e1;
+}
+#name-song-current {
+    text-align: center;
+    font-size: larger;
+}
+.song-time {
+    position: relative;
+    padding-top: 10px;
+}
+#g-music-ctrl {
+    height: 12%;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.ctrl-left {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+img.music-backward {
+    position: relative;
+    left: 17px;
+}
+img.music-forward {
+    position: relative;
+    right: 17px;
+}
+.ctrl-center {
+    position: absolute;
+    top: 13px;
+    left: 133px;
+}
+.ctrl-right {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+
+.g-music-head img {
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    position: absolute;
+    top: 15px;
+}
+.g-music-head span {
+    color: rgba(227, 227, 227, 0.93);;
+    position: relative;
+    top: 20px;
+}
+#g-music-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 30px;
+    left: 50px;
+    position: relative;
+    box-shadow: 0px 0px 20px 5px;
+    animation: 10s vr infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+#g-music-img img.img-rotate {
+    animation-play-state: running;
+}
+
+#time-current {
+    left: 10px;
+    position: absolute;
+}
+#time-total {
+    position: absolute;
+    right: 10px;
+}
+.song-time input {
+    width: 60%;
+    height: 5px;
+    position: absolute;
+    right: 50%;
+    top: 17px;
+    border-radius: 5px;
+    transform: translateX(50%);
+}
+#g-music-ctrl img {
+    width: 32px;
+    height: 32px;
+}
+
+#g-music-footer img {
+    width: 30px;
+    height: 30px;
+    padding: 19px 33px;
+}
+.hide {
+    display: none;
+}
+input[type='range']{
+    -webkit-appearance: none;
+    background: -webkit-linear-gradient(left ,#FD4848 0%,#FD4848 0%,#C4C4C4 0%, #C4C4C4 100%);
+    outline: none;
+}
+input[type='range']::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #FD4848;
+    border-radius: 50%;
+    /*transition: 0.2s;*/
+}
+input[type="range"]:hover,
+input[type="range"]:active{
+    /*width: 14px;
+    height: 14px;*/
+    outline: none;
+}
+
+/*input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;*/
+    /*border-radius: 10px; /*将轨道设为圆角的*/
+    /*box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; /*轨道内置阴影效果*/*/*/
+/*}
+input[type=range]:focus {
+    outline: none;
+}*/

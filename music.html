@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>music-g-final</title>
+        <link rel="stylesheet" href="master.css">
+        <script src=util.js></script>
+    </head>
+    <body>
+        <div id="g-music-box">
+            <div class="g-music-head">
+                <span class='head-title'>正在播放</span>
+                <img src="icons/songs.png" title="播放列表">
+            </div>
+
+            <div id="g-music-img">
+                <img class='img-pause' src="imgs/6.jpg" alt="当前歌曲封面">
+            </div>
+
+            <audio id='id-audio-player' src="music/1.mp3"></audio>
+            <div id="g-music-detail">
+                <div id="name-song-current">四季 -- 春</div>
+                <div class="song-time">
+                    <span id='time-current'>00:00</span>
+                    <input type="range" min='0' max='100' step='1' value="0">
+                    <span id='time-total'>00:00</span>
+                </div>
+            </div>
+
+            <div id="g-music-ctrl">
+                <span class="ctrl-left">
+                    <img src="icons/one.png" title="单曲循环">
+                    <img class='music-backward' src="icons/backward.png" title="上一曲">
+                </span>
+                <span class="ctrl-center">
+                    <img class='hide' id='id-button-pause' src="icons/play.png" title="暂停">
+                    <img class='' id='id-button-play' src="icons/pause.png" title="播放">
+                </span>
+                <span class="ctrl-right">
+                    <img class='music-forward' src="icons/forward.png" title="下一曲">
+                    <img src="icons/random.png" title="随机播放">
+                </span>
+            </div>
+
+            <div id="g-music-footer">
+                <img src="icons/like.png" title="喜欢">
+                <img src="icons/collect.png" title="收藏">
+                <img src="icons/share.png" title="分享">
+            </div>
+        </div>
+    <script src='music.js'></script>
+    </body>
+</html>
